@@ -4,6 +4,9 @@ body {
 	background: #FFFFEE;
 	font-size: 12px;
 	overflow: auto;
+
+	filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+    -webkit-filter: grayscale(100%);
 }
 
 #mainDiv{
