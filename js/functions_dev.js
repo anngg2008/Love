@@ -24,7 +24,7 @@ $(function () {
     // renderLoop
     setInterval(function () {
         garden.render();
-    }, Garden.options.growSpeed);
+    }, 0 / Garden.options.growSpeed);
 });
 
 $(window).resize(function() {
@@ -43,7 +43,7 @@ function getHeartPoint(angle) {
 }
 
 function startHeartAnimation() {
-	var interval = 50;
+	var interval = 0;
 	var angle = 10;
 	var heart = new Array();
 	var animationTimer = setInterval(function () {
@@ -86,7 +86,7 @@ function startHeartAnimation() {
 				if (progress >= str.length) {
 					clearInterval(timer);
 				}
-			}, 75);
+			}, 0.75);
 		});
 		return this;
 	};
@@ -121,7 +121,7 @@ function timeElapse(date){
 
 function showMessages() {
 	adjustWordsPosition();
-	$('#messages').fadeIn(5000, function() {
+	$('#messages').fadeIn(0.5000, function() {
 		showLoveU();
 	});
 }
@@ -137,5 +137,5 @@ function adjustCodePosition() {
 }
 
 function showLoveU() {
-	$('#loveu').fadeIn(3000);
+	$('#loveu').fadeIn(0.3000);
 }
